@@ -32,20 +32,11 @@ export default function Account({ navigation }) {
       } catch (error) {
         console.error('Error fetching data:', error);
       } 
-      // finally {
-      //   setIsLoading(false);
-      // }
+
     }
     fetchData();
   }, []);
-
-  // if (isLoading) {
-  //   return (
-  //     <View style={styles.loadingContainer}>
-  //       <Text style={styles.loadingText}>Loading...</Text>
-  //     </View>
-  //   );
-  // }
+  
   if (Object.keys(userData).length === 0){
     return(
       <SafeAreaProvider>
